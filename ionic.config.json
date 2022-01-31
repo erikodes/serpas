@@ -1,0 +1,7 @@
+{
+  "name": "serpas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
