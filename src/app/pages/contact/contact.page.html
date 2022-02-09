@@ -1,0 +1,85 @@
+<ion-content [fullscreen]="true">
+    <app-header></app-header>
+    <div class="banner">
+        <h1 class="banner__title">Contáctanos</h1>
+        <ion-breadcrumbs class="banner__breadcrumbs">
+            <ion-breadcrumb class="banner__item" href="#">
+                Inicio
+            </ion-breadcrumb>
+            <ion-breadcrumb class="banner__item" href="#electronics">
+                Contáctanos
+            </ion-breadcrumb>
+        </ion-breadcrumbs>
+    </div>
+    <section class="contact">
+        <div class="contact__layer"></div>
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col sizeMd="5" class="contact__info">
+                    <div class="header">
+                        <p class="header__section">Ven a visitarnos a</p>
+                        <h1 class="header__title">Ponte en contacto</h1>
+                    </div>
+
+                    <ion-item class="contact__item" lines="none">
+                        <ion-avatar slot="start">
+                            <ion-icon name="location" color="light"></ion-icon>
+                        </ion-avatar>
+                        <ion-label>
+                            <h1 class="font-bold">Dirección de oficina</h1>
+                            <p>
+                                Pasaje Francisco campos, entre 3ª y 7ª calle poniente, número 204 Colonia escalón, San
+                                Salvador.
+                            </p>
+                        </ion-label>
+                    </ion-item>
+
+                    <ion-item class="contact__item" lines="none">
+                        <ion-avatar slot="start">
+                            <ion-icon name="call" color="light"></ion-icon>
+                        </ion-avatar>
+                        <ion-label>
+                            <h1 class="font-bold">Numero de telefono</h1>
+                            <p>(+503) 7749-9982</p>
+                        </ion-label>
+                    </ion-item>
+
+                    <ion-item class="contact__item contact__item--no-border" lines="none">
+                        <ion-avatar slot="start">
+                            <ion-icon name="mail" color="light"></ion-icon>
+                        </ion-avatar>
+                        <ion-label>
+                            <h1 class="font-bold">Correo electrónico</h1>
+                            <p>rserpas@serpasconsulting.com</p>
+                        </ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col sizeMd="7" class="contact__form">
+                    <div class="header">
+                        <h1 class="header__title">Envíanos un mensaje</h1>
+                        <p class="header__subtitle">
+                            Para más información sobre nuestros servicios, complete el formulario:
+                        </p>
+                    </div>
+                    <form class="ion-padding-top">
+                        <div class="d-flex">
+                            <ion-input type="text" placeholder="Nombre y apellido*"></ion-input>
+                            <ion-input type="email" placeholder="Correo electrónico*"></ion-input>
+                        </div>
+                        <ion-input type="text" placeholder="Asunto*"></ion-input>
+                        <ion-textarea type="text" placeholder="Mensaje*" rows="4"></ion-textarea>
+                        <ion-button class="ion-margin-top">
+                            Enviar mensaje
+                        </ion-button>
+                    </form>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10565.6882304568!2d-89.24581771899413!3d13.7054915164011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63301fbe799ff1%3A0xde50ce153dc212a9!2sWavesite!5e0!3m2!1sen!2ssv!4v1644211411267!5m2!1sen!2ssv"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <app-footer></app-footer>
+</ion-content>

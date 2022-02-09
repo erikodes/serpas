@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,314 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+ion-header {
+  box-shadow: 0 0 7px rgb(0 0 0 / 10%);
+  position: sticky;
+  top: -53px;
+  ion-toolbar {
+    --border-width: 0 !important;
+  }
+}
+
+ion-button {
+  height: 50px !important;
+  --padding-start: 33px !important;
+  --padding-end: 33px !important;
+  --border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+  --background: linear-gradient(90deg, #3486fe, #0c1bae);
+  --background-hover: linear-gradient(90deg, #0c1bae, #3486fe);
+}
+
+ion-input,
+ion-textarea {
+  background: white !important;
+  margin-bottom: 24px;
+  font-size: 14px !important;
+  --padding-top: 17px !important;
+  --padding-start: 24px !important;
+  --padding-bottom: 16px !important;
+  --padding-end: 24px !important;
+}
+
+.font-bold {
+  font-weight: 600 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+  gap: 10px;
+  .ml-auto {
+    margin-left: auto;
+  }
+  .w-50 {
+    width: 50%;
+  }
+}
+
+.header {
+  z-index: 111;
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 24px;
+  }
+  &__section {
+    font-weight: 600;
+    font-style: normal;
+    color: #104cba;
+    font-size: 16px;
+    padding-bottom: 13px;
+    text-transform: uppercase;
+    position: sticky;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border-radius: 5px;
+      background-color: #f7f9fe;
+      top: -53px;
+      width: 48px;
+      height: 48px;
+      left: -60px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border-radius: 5px;
+      background-color: #f7f9fe;
+      top: -6px;
+      width: 32px;
+      height: 32px;
+      left: -11px;
+    }
+    &--dark {
+      &::before {
+        background: #eaedf5;
+      }
+      &::after {
+        background: #eaedf5;
+      }
+    }
+    &--no-icons {
+      &::before {
+        background: transparent;
+      }
+      &::after {
+        background: transparent;
+      }
+    }
+  }
+  &__subtitle {
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #616161;
+    margin-bottom: 16px;
+  }
+  &__extra {
+    font-size: 22px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #616161;
+    width: 50%;
+  }
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+  width: 100%;
+  background: var(--ion-color-primary) url(./assets/images/frame-world.png) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__subtitle {
+    font-size: 25px;
+    color: #fefefe;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 32px;
+    width: 40%;
+    text-align: center;
+  }
+}
+
+.banner {
+  background-image: url(assets/images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+  }
+  &__breadcrumbs {
+  }
+  &__item {
+    color: white;
+  }
+}
+
+.info {
+  padding: 110px 0 110px 0;
+  &--light {
+    background: #fafbfe;
+  }
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+}
+
+.contact {
+  background: #f7f9fe;
+  position: relative;
+  &__layer {
+    position: absolute;
+    height: 100%;
+    width: 43.5%;
+    background: white;
+  }
+  &__info {
+    padding: 80px 0;
+    padding-right: 80px;
+  }
+  &__form {
+    padding: 80px 40px;
+    .d-flex {
+      gap: 25px !important;
+    }
+  }
+  &__item {
+    border-bottom: 1px solid #eaedf5;
+    padding: 20px 0 !important;
+    --padding-start: 0;
+    ion-avatar {
+      background: var(--ion-color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4em !important;
+      height: 4em !important;
+      ion-icon {
+        font-size: 1.3em !important;
+      }
+    }
+    h1 {
+      font-size: 17px;
+    }
+    p {
+      color: #6e6e6e;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    &--no-border {
+      border-bottom: none !important;
+    }
+  }
+}
+
+.service {
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  padding: 50px 40px 40px;
+  margin: 16px;
+  height: 92%;
+  &__icon {
+    font-size: 25px;
+    font-size: 50px;
+    color: #1128b8;
+    --ionicon-stroke-width: 17px;
+    margin-bottom: 24px;
+  }
+  &__title {
+    font-size: 22px;
+    margin-bottom: 13px;
+    font-weight: 500;
+  }
+  &__list {
+    padding: 0;
+    list-style: none;
+    li {
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: #616161;
+    }
+  }
+}
+
+//PHONE
+@media (max-width: 990px) {
+  .hide-app {
+    display: none;
+  }
+  .text {
+    padding: 0 16px;
+  }
+  .header {
+    padding: 0 16px;
+    .w-50 {
+      width: 100%;
+    }
+  }
+  .column {
+    &__title {
+      width: 90%;
+      font-size: 35px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+  .contact {
+    &__layer {
+      height: 43.5%;
+      width: 100%;
+    }
+    &__info {
+      padding: 80px 16px;
+    }
+    &__form {
+      padding: 80px 16px;
+    }
+  }
+}

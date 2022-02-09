@@ -1,0 +1,85 @@
+<ion-content [fullscreen]="true">
+    <app-header></app-header>
+    <div class="banner">
+        <h1 class="banner__title">Quienes somos</h1>
+        <ion-breadcrumbs class="banner__breadcrumbs">
+            <ion-breadcrumb class="banner__item" href="#">
+                Inicio
+            </ion-breadcrumb>
+            <ion-breadcrumb class="banner__item" href="#electronics">
+                Quienes somos
+            </ion-breadcrumb>
+        </ion-breadcrumbs>
+    </div>
+    <section class="info">
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col sizeMd="6" sizeSm="12">
+                    <div class="header">
+                        <p class="header__section">Quienes Somos</p>
+                        <h1 class="header__title">Serpas Consulting El Salvador</h1>
+                        <h5 class="header__subtitle">
+                            Tenemos la mejor combinación entre EXPERIENCIA, COMPROMISO, CONOCIMIENTO Y PROFESIONALISMO.
+                        </h5>
+                    </div>
+                    <p class="ion-padding-bottom">
+                        Nuestros socios y equipo de trabajo cuentan con mas de 10 años de experiencia en empresas del
+                        sector financiero, retail, industriales, comerciales y servicios. La firma posee un equipo de
+                        profesionales jóvenes, altamente capacitados. Adicionalmente, dentro de nuestro equipo tenemos
+                        personal con CPA, MBA, Certificados CISA, Certificados en AML Monitor, ISO/Lead Auditor.
+                        <br><br>
+                        Nuestra firma posee una excelente experiencia en atención personalizada y oportuna con nuestros
+                        clientes, contamos con presencia en todo El Salvador. Actualmente, contamos con clientes locales
+                        e internacionales.
+                    </p>
+                    <ion-button class="ion-margin-top" routerLink="/services">
+                        Ver servicios
+                        <ion-icon name="arrow-forward-outline" class="ion-margin-start"></ion-icon>
+                    </ion-button>
+                </ion-col>
+                <ion-col size="5" offset="1" class="hide-app">
+                    <img src="http://portal.ucm.cl//content/uploads/2020/10/contador-p%C3%BAblico-y-auditor-4.jpg"
+                        alt="">
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <section class="info info--light">
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col size="5" class="hide-app">
+                    <img src="https://admision.udp.cl/cms/wp-content/uploads/2018/08/Contador-Auditor.jpg" alt="">
+                </ion-col>
+                <ion-col sizeMd="6" offsetMd="1" sizeSm="12">
+                    <div class="header">
+                        <p class="header__section header__section--dark">Misió y visión</p>
+                        <h1 class="header__title">
+                            <!-- Better Website Means A BetternUser Experience -->
+                            Soluciones a la medida en todas las áreas de servicios que brindamos.
+                        </h1>
+                    </div>
+
+                    <div class="element ion-margin-top">
+                        <h4 class="font-bold ion-margin-bottom">Misión</h4>
+                        <p>
+                            Brindar a nuestros clientes mejoras confiables e importantes con el fin de fortalecer sus
+                            compañías y competitividad a través de nuestros servicios de auditoría, consultorías y
+                            servicios financieros.
+                        </p>
+                    </div>
+
+                    <br><br>
+
+                    <div class="element ion-margin-bottom">
+                        <h4 class="font-bold ion-margin-bottom">Visión</h4>
+                        <p>
+                            Ser una firma de auditores referente en fortalecimiento en mejora a los procesos, controles
+                            internos y áreas financieras reales de las compañías locales e internacionales.
+                        </p>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <app-footer></app-footer>
+</ion-content>

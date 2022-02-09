@@ -1,0 +1,198 @@
+<ion-content [fullscreen]="true">
+    <app-header></app-header>
+    <section class="welcome">
+        <ion-slides class="welcome__slider">
+            <ion-slide class="welcome__slide"
+                style="background-image: url(https://udv.edu.gt/wp-content/uploads/2020/06/Portada_destacada-Blog-Auditor01.jpg);">
+                <div class="welcome__background"></div>
+                <div class="welcome__item">
+                    <ion-grid fixed>
+                        <ion-row>
+                            <ion-col sizeMd="6">
+                                <h1>Awesome Slide Content</h1>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam vero illum
+                                    repellendus, quidem alias harum numquam consequuntur in saepe.
+                                </p>
+                                <ion-button color="light">
+                                    Conotactanos
+                                </ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </section>
+    <section id="about">
+        <ion-grid style="position: relative;" fixed>
+            <ion-row>
+                <ion-col sizeMd="6" sizeSm="12">
+                    <div class="header">
+                        <p class="header__section">Quienes Somos</p>
+                        <h1 class="header__title">Bienvenidos a Serpas Consulting El Salvador</h1>
+                        <h5 class="header__subtitle">
+                            Serpas Consulting El Salvador, fue creada en mayo del 2016 PARA ofrecer servicios de
+                            Contabilidad y Auditoría en El Salvador
+                        </h5>
+                    </div>
+                    <p class="text">
+                        Serpas Consulting El Salvador, fue creada en mayo del 2016 para ofrecer servicios de
+                        Contabilidad y Auditoría en El Salvador. La firma ha tenido evolución y actualmente ha añadido a
+                        su portafolio de servicios, consultorías locales e internacionales, estudios de precios de
+                        transferencias y auditorías internas por servicios de co-sourcing. Asimismo, realizamos
+                        evaluaciones en temas de prevención de lavado de dinero y asesoramos en temas de impuestos en El
+                        Salvador.
+                    </p>
+                    <br>
+                    <ion-button class="ion-margin-top" routerLink="/about">
+                        Más sobre nosotros
+                        <ion-icon name="arrow-forward-outline" class="ion-margin-start"></ion-icon>
+                    </ion-button>
+                </ion-col>
+                <ion-col size="5" offset="1" class="hide-app">
+                    <img src="https://www.uade.edu.ar/media/i4sn2cbq/61.jpg?anchor=center&mode=crop&width=1240&height=910&rnd=132350565369900000"
+                        alt="">
+                </ion-col>
+            </ion-row>
+            <img class="frame hide-app" src="http://integrio.wgl-demo.net/wp-content/uploads/2019/05/section_bg_01.png"
+                alt="">
+        </ion-grid>
+    </section>
+    <section class="services">
+        <ion-grid class="container" fixed>
+            <ion-row>
+                <ion-col size="12">
+                    <div class="header d-flex">
+                        <div class="w-50">
+                            <p class="header__section">Nuestro servicios</p>
+                            <h1 class="header__title">Lo que ofrecemos</h1>
+                        </div>
+                        <h5 class="header__extra hide-app">
+                            Soluciones a la medida en todas las áreas de servicios que brindamos.
+                        </h5>
+                    </div>
+                    <ion-grid class="ion-margin-top ion-no-padding" style="margin: 0 -16px;" fixed>
+                        <ion-row>
+                            <ion-col sizeMd="4">
+                                <div class="service">
+                                    <ion-icon name="document-outline" class="service__icon"></ion-icon>
+                                    <h4 class="service__title">Auditoria</h4>
+                                    <ul class="service__list">
+                                        <li>- Auditoría de Estados Financieros</li>
+                                        <li>- Auditoría de Sistemas</li>
+                                        <li>- Auditoría de Áreas Especificas</li>
+                                        <li>- Auditoría Interna Co-sourcing</li>
+                                    </ul>
+                                </div>
+                            </ion-col>
+                            <ion-col sizeMd="4">
+                                <div class="service">
+                                    <ion-icon name="man-outline" class="service__icon"></ion-icon>
+                                    <h4 class="service__title">Gestión humana</h4>
+                                    <ul class="service__list">
+                                        <li>- Búsqueda, selección y reclutamiento de personal contable de cualquier
+                                            nivel
+                                            jerárquico.</li>
+                                        <li>- Análisis y creación de los descriptores de puestos.</li>
+                                    </ul>
+                                </div>
+                            </ion-col>
+                            <ion-col sizeMd="4">
+                                <div class="service">
+                                    <ion-icon name="chatbubbles-outline" class="service__icon"></ion-icon>
+                                    <h4 class="service__title">Consultoria</h4>
+                                    <ul class="service__list">
+                                        <li>- Conversión de Estados Financieros a Normas Internacionales de Información
+                                            Financiera.</li>
+                                        <li>- Revisión y evaluación del control interno y Gobierno Corporativo.</li>
+                                    </ul>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                    <div style="width: 100%;" class="ion-text-center">
+                        <ion-button class="ion-margin-top" routerLink="/services">
+                            Ver todos los servicios
+                            <ion-icon name="arrow-forward-outline" class="ion-margin-start"></ion-icon>
+                        </ion-button>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <div class="column">
+        <p class="column__subtitle">Para más información sobre nuestros servicios</p>
+        <h1 class="column__title">Ponte en contacto con nosotros</h1>
+        <ion-button color="" class="ion-margin-top" routerLink="/contact">
+            Contactanos
+            <ion-icon name="arrow-forward-outline" class="ion-margin-start"></ion-icon>
+        </ion-button>
+    </div>
+    <section class="contact">
+        <div class="contact__layer"></div>
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col sizeMd="5" class="contact__info">
+                    <div class="header">
+                        <p class="header__section">Ven a visitarnos a</p>
+                        <h1 class="header__title">Ponte en contacto</h1>
+                    </div>
+
+                    <ion-item class="contact__item" lines="none">
+                        <ion-avatar slot="start">
+                            <ion-icon name="location" color="light"></ion-icon>
+                        </ion-avatar>
+                        <ion-label>
+                            <h1 class="font-bold">Dirección de oficina</h1>
+                            <p>
+                                Pasaje Francisco campos, entre 3ª y 7ª calle poniente, número 204 Colonia escalón, San
+                                Salvador.
+                            </p>
+                        </ion-label>
+                    </ion-item>
+
+                    <ion-item class="contact__item" lines="none">
+                        <ion-avatar slot="start">
+                            <ion-icon name="call" color="light"></ion-icon>
+                        </ion-avatar>
+                        <ion-label>
+                            <h1 class="font-bold">Numero de telefono</h1>
+                            <p>(+503) 7749-9982</p>
+                        </ion-label>
+                    </ion-item>
+
+                    <ion-item class="contact__item contact__item--no-border" lines="none">
+                        <ion-avatar slot="start">
+                            <ion-icon name="mail" color="light"></ion-icon>
+                        </ion-avatar>
+                        <ion-label>
+                            <h1 class="font-bold">Correo electrónico</h1>
+                            <p>rserpas@serpasconsulting.com</p>
+                        </ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col sizeMd="7" class="contact__form">
+                    <div class="header">
+                        <h1 class="header__title">Envíanos un mensaje</h1>
+                        <p class="header__subtitle">
+                            Para más información sobre nuestros servicios, complete el formulario:
+                        </p>
+                    </div>
+                    <form class="ion-padding-top">
+                        <div class="d-flex">
+                            <ion-input type="text" placeholder="Nombre y apellido*"></ion-input>
+                            <ion-input type="email" placeholder="Correo electrónico*"></ion-input>
+                        </div>
+                        <ion-input type="text" placeholder="Asunto*"></ion-input>
+                        <ion-textarea type="text" placeholder="Mensaje*" rows="4"></ion-textarea>
+                        <ion-button class="ion-margin-top">
+                            Enviar mensaje
+                        </ion-button>
+                    </form>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <app-footer></app-footer>
+</ion-content>

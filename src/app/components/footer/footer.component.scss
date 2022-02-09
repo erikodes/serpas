@@ -1,0 +1,60 @@
+ion-toolbar {
+  --background: transparent !important;
+  background-image: url(../../../assets/images/footer.png);
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer {
+  &__logo {
+    filter: invert(1) brightness(100);
+    width: 170px;
+    margin-bottom: 25px;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+  }
+  &__socials {
+    margin-top: 20px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__list {
+    line-height: 2.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+  &__label {
+    color: white;
+  }
+}
+
+.subfooter {
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: #515dbb;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 85px;
+  margin-bottom: 0px;
+  padding: 23px 0px 23px 0px;
+  p {
+    color: #a7b4df;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
