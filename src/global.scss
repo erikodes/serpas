@@ -43,6 +43,11 @@ ion-header {
   }
 }
 
+.text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 ion-button {
   height: 50px !important;
   --padding-start: 33px !important;
