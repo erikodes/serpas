@@ -3,13 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
     {
-        path: 'home',
-        loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
-    },
-    {
         path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
+        loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
     },
     {
         path: 'about',
@@ -23,10 +18,10 @@ const routes: Routes = [
         path: 'join',
         loadChildren: () => import('./pages/join/join.module').then(m => m.JoinPageModule)
     },
-  {
-    path: 'contact',
-    loadChildren: () => import('./pages/contact/contact.module').then( m => m.ContactPageModule)
-  },
+    {
+        path: 'contact',
+        loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactPageModule)
+    },
 ];
 
 @NgModule({
