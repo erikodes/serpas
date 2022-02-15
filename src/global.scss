@@ -351,4 +351,8 @@ p {
     animation-delay: 6s;
     animation-delay: calc(var(--animate-delay) * 6);
   }
+  &__delay-7s {
+    animation-delay: 7s;
+    animation-delay: calc(var(--animate-delay) * 7);
+  }
 }
